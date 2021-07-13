@@ -31,7 +31,8 @@ const Landing = () => {
 
   async function handleClick() {
 
-    let resp = await createRoom('http://localhost:3001/api/v1/home', {
+    let resp = await createRoom(`${process.env.REACT_APP_BASE_URL}home`, {
+    // let resp = await createRoom('http://localhost:3001/api/v1/home', {
       "room": value,
       "room_id": String(Date.now() + Math.random()),
       "meta": {}

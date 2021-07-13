@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const io = require('socket.io-client');
 
 let games = io.connect(process.env.REACT_APP_BASE_URL, {reconnect: true, transports: ['websocket'] })
-console.log('--->', process.env.REACT_APP_BASE_URL)
+// console.log('--->', process.env.REACT_APP_BASE_URL)
 window.$games = games //global variable
 
 const App = () => {
