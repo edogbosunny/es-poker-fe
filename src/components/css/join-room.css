@@ -1,0 +1,12 @@
+.body{
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.alg-page{
+margin-top: 50vh;
+text-align: center;
+}

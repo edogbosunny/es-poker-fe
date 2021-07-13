@@ -1,0 +1,39 @@
+.vote{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.card{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  height: 40vh;
+  background-color: #4242426f;
+  width: 30vh
+}
+.card-div{
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-content{
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
+}
+.drop{
+  width: 100%;
+  /* margin-top: 2vh;
+  display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 20vw;
+    padding: 5;
+    height: 20;
+    border-radius: 5;
+    height: 3vh;
+    margin-bottom: 1vh; */
+}
