@@ -41,7 +41,6 @@ const Vote = (props) => {
 
   io.on('vote-status', (res) => {
     setData(res.response.meta.data)
-    console.log('vote-success ==-->', res.response.meta.data)
   })
 
   let handleDropdownChange = (e) => {
@@ -63,16 +62,17 @@ const Vote = (props) => {
         }}
       />
       <div>
+        {/** Todo! Refactor this bit to avoid repitition */}
         <select id="dropdown" onChange={handleDropdownChange}>
           <option value={dropDown}>{dropDown}</option>
           <option value="0">0</option>
-          <option value='0.5'>2</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
+          <option value='0.5'>1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
           <option value="5">5</option>
-          <option value="8">8</option>
-          <option value="13">13</option>
+          <option value="8">6</option>
+          <option value="13">7</option>
         </select>
 
       </div>

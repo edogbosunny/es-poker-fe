@@ -20,7 +20,6 @@ import NotFound from '../components/not-found';
             <Route exact path='/join' component={JoinRoom} />
             <Route component={NotFound} />
           </Switch>
-        
         </div>
       </BrowserRouter>
 );

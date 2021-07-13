@@ -11,9 +11,10 @@ const JoinRoom = (props) => {
 
   const joinroom = async (url, data) => {
     try {
-       let a = await axios.get(url)
-       return a
+       return await axios.get(url)
+       
     } catch (e) {
+      // Todo! build a proper snacbar if there is more time.
       window.alert(e.message);
     }
   }
@@ -39,9 +40,7 @@ const JoinRoom = (props) => {
         <div>Attempting to join</div>
       </div>
     </div>
-
   )
-
 }
 
 export default withRouter(JoinRoom);
